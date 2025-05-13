@@ -6,14 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		603FFE0D2DCF11C900A081B9 /* API1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603FFE092DCF11C900A081B9 /* API1App.swift */; };
+		603FFE0E2DCF11C900A081B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603FFE0B2DCF11C900A081B9 /* ContentView.swift */; };
+		603FFE0F2DCF11C900A081B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603FFE052DCF11C900A081B9 /* Preview Assets.xcassets */; };
+		603FFE102DCF11C900A081B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603FFE0A2DCF11C900A081B9 /* Assets.xcassets */; };
+		603FFE122DCF11F600A081B9 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603FFE112DCF11F600A081B9 /* CountryModel.swift */; };
+		603FFE192DCF15A800A081B9 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603FFE182DCF15A800A081B9 /* CountryViewModel.swift */; };
+		603FFE1B2DCF174900A081B9 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603FFE1A2DCF174900A081B9 /* CountryListView.swift */; };
+		603FFE1D2DCF183900A081B9 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603FFE1C2DCF183900A081B9 /* CountryDetailView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		603FFDF02DCF117400A081B9 /* API1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = API1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		603FFE052DCF11C900A081B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		603FFE092DCF11C900A081B9 /* API1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API1App.swift; sourceTree = "<group>"; };
+		603FFE0A2DCF11C900A081B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		603FFE0B2DCF11C900A081B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		603FFE112DCF11F600A081B9 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		603FFE182DCF15A800A081B9 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		603FFE1A2DCF174900A081B9 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		603FFE1C2DCF183900A081B9 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		603FFDF22DCF117400A081B9 /* API1 */ = {
+		603FFE132DCF12FD00A081B9 /* Service */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = API1;
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +51,7 @@
 		603FFDE72DCF117400A081B9 = {
 			isa = PBXGroup;
 			children = (
-				603FFDF22DCF117400A081B9 /* API1 */,
+				603FFE0C2DCF11C900A081B9 /* API1 */,
 				603FFDF12DCF117400A081B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,54 @@
 				603FFDF02DCF117400A081B9 /* API1.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		603FFE042DCF11C900A081B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				603FFE112DCF11F600A081B9 /* CountryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		603FFE062DCF11C900A081B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				603FFE052DCF11C900A081B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		603FFE072DCF11C900A081B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				603FFE182DCF15A800A081B9 /* CountryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		603FFE082DCF11C900A081B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				603FFE0B2DCF11C900A081B9 /* ContentView.swift */,
+				603FFE1A2DCF174900A081B9 /* CountryListView.swift */,
+				603FFE1C2DCF183900A081B9 /* CountryDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		603FFE0C2DCF11C900A081B9 /* API1 */ = {
+			isa = PBXGroup;
+			children = (
+				603FFE132DCF12FD00A081B9 /* Service */,
+				603FFE042DCF11C900A081B9 /* Models */,
+				603FFE072DCF11C900A081B9 /* ViewModels */,
+				603FFE082DCF11C900A081B9 /* Views */,
+				603FFE062DCF11C900A081B9 /* Preview Content */,
+				603FFE092DCF11C900A081B9 /* API1App.swift */,
+				603FFE0A2DCF11C900A081B9 /* Assets.xcassets */,
+			);
+			path = API1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +128,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				603FFDF22DCF117400A081B9 /* API1 */,
+				603FFE132DCF12FD00A081B9 /* Service */,
 			);
 			name = API1;
 			packageProductDependencies = (
@@ -109,6 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603FFE0F2DCF11C900A081B9 /* Preview Assets.xcassets in Resources */,
+				603FFE102DCF11C900A081B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603FFE1D2DCF183900A081B9 /* CountryDetailView.swift in Sources */,
+				603FFE0D2DCF11C900A081B9 /* API1App.swift in Sources */,
+				603FFE0E2DCF11C900A081B9 /* ContentView.swift in Sources */,
+				603FFE122DCF11F600A081B9 /* CountryModel.swift in Sources */,
+				603FFE192DCF15A800A081B9 /* CountryViewModel.swift in Sources */,
+				603FFE1B2DCF174900A081B9 /* CountryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

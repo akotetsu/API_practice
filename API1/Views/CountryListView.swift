@@ -1,15 +1,20 @@
-//
-//  CountryListView.swift
-//  API1
-//
-//  Created by 原里駆 on 2025/05/10.
-//
-
 import SwiftUI
 
 struct CountryListView: View {
+    @StateObject private var viewModel = CountryViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(viewModel.countries) { country in
+                NavigationLink(destination: CountryDetailView(country: country)) {
+                    Text(country.name.common)
+                }
+            }
+            .navigationTitle("Countries")
+            .task { //View表示時に非同期処理を実行
+                await viewModel.loadCountries()
+            }
+        }
     }
 }
 
